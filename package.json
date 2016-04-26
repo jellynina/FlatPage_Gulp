@@ -1,0 +1,32 @@
+{
+  "name": "one-page-psd-html",
+  "version": "1.0.0",
+  "description": "Tutorial in NCKUid CS intro class, PSD to Html designed by Aryan Dhani",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PSD",
+    "to",
+    "html"
+  ],
+  "author": "jellynina",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-swig": "^0.8.0",
+    "gulp-watch": "^4.3.5",
+    "gulp-watch-sequence": "^1.0.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  }
+}

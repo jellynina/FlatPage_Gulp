@@ -1,0 +1,161 @@
+@import "bootstrap-variables";
+// Import Bootstrap for Sass
+@import "./node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+// The custom css style
+/* helper class */
+.section{
+  margin-top: 15px;
+  padding: 20px 0;
+}
+
+.hover-to-show{
+  opacity: 0;
+  transition: .3s ease-in;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+//擴充
+
+/* btn */
+.btn-circle{
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  background-color: #fff;
+  color: $gray-dark;
+}
+
+
+
+//=========page sections
+/* navbar */
+.navbar-brand{
+  padding: 15px;
+}
+
+.navbar-fixed-top + div{
+  margin-top: $navbar-height;
+}
+
+/* hero */
+.hero-background{
+  background: $gray url("../img/jumbotron.png") center center no-repeat;
+  background-size: cover;
+  height: 500px;
+  color: #FFFFFF;
+
+  .btn-primary{
+    margin-top: 100px;
+  }
+
+  .btn-circle{
+    margin-top: 1em;
+  }
+}
+
+/* profile */
+.feature-section{
+  position: relative;
+  text-align: center;
+  .section-item{
+    width: 170px;
+    position: relative;
+  }
+
+  .hover-to-show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(#16a086, .75);
+    border-radius: 50%;
+    padding-top: 3em;
+  }
+
+  .btn-circle{
+    background-color: rgba(#444444, .6);
+    border-color: transparent;
+    color: #FFF;
+  }
+}
+
+
+/* about-section */
+.about-section{
+  padding: 35px 0;
+  background-color: #16a086;
+  .text-muted{
+    color: #fff;
+  }
+  .section{
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .section-item{
+    width: 220px;
+    padding: 0;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .item-img{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .item-info{
+    margin: 0;
+    padding: 15px 5px;
+    background-color: #fff;
+  }
+}
+
+/* contact-section */
+
+.contact-section{
+  margin-top: 0;
+  padding-top: 20px;
+  background-color: #ecf0f1;
+}
+
+.contact-form{
+  width: 460px;
+
+  >.form-inline{
+    width: 100%;
+    margin-bottom: 20px;
+    .form-control{
+      width: 100%;
+    }
+    >.form-group{
+      width: 50%;
+      padding-right: 10px;
+      &:last-of-type{
+        padding-left: 10px;
+        padding-right:0
+      }
+    }
+  }
+}
+
+
+footer{
+  background-color: #2d3e50;
+  color: #FFF;
+  padding: 35px 5px;
+}
+
+.totop{
+  z-index: $zindex-popover;
+  position: fixed;
+  right: 25px;
+  bottom: 30px;
+}
